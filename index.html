@@ -3,87 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PublishIT | Portfolio</title>
+  <title>PublishIt | Knowledge Publishing Platform</title>
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #0b1220;
-      color: #ffffff;
+      color: #f8fafc;
       line-height: 1.6;
     }
     header {
-      padding: 60px 20px;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      background: linear-gradient(135deg, #0b1220, #173b6c);
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #020617, #0f172a, #1e3a8a);
     }
     header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-      color: #f5c542;
+      font-size: 64px;
+      margin: 0;
+      color: #facc15;
+    }
+    header h2 {
+      font-size: 30px;
+      margin: 10px 0;
     }
     header p {
-      font-size: 20px;
-      color: #d6d6d6;
+      max-width: 800px;
+      margin: 20px auto;
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 22px;
+      border-radius: 8px;
+      background: #facc15;
+      color: #020617;
+      text-decoration: none;
+      font-weight: bold;
     }
     nav {
-      background: #111827;
-      padding: 15px;
-      text-align: center;
       position: sticky;
       top: 0;
+      z-index: 10;
+      background: #020617;
+      padding: 14px;
+      text-align: center;
+      border-bottom: 1px solid #1e293b;
     }
     nav a {
-      color: white;
+      color: #f8fafc;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 12px;
       font-weight: bold;
     }
     section {
-      padding: 50px 20px;
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
+      padding: 60px 20px;
     }
     h2 {
-      color: #f5c542;
-      border-bottom: 1px solid #334155;
-      padding-bottom: 10px;
+      color: #facc15;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
     }
     .card {
       background: #111827;
-      padding: 25px;
-      border-radius: 12px;
-      margin: 20px 0;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      border: 1px solid #1e293b;
+      padding: 24px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    }
+    .card h3 {
+      color: #facc15;
+      margin-top: 0;
+    }
+    .dashboard-frame {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 14px;
+      margin-top: 20px;
+      background: #000;
+    }
+    .tag {
+      display: inline-block;
+      background: #1e293b;
+      padding: 6px 10px;
+      border-radius: 20px;
+      margin: 5px;
+      color: #cbd5e1;
+      font-size: 14px;
     }
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 35px 20px;
       background: #020617;
-      color: #aaa;
+      color: #94a3b8;
+      border-top: 1px solid #1e293b;
     }
-    .button {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 18px;
-      background: #f5c542;
-      color: #000;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
+    @media (max-width: 700px) {
+      header h1 { font-size: 44px; }
+      header h2 { font-size: 22px; }
+      .dashboard-frame { height: 420px; }
+      nav a { display: inline-block; margin: 6px; }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>PublishIT</h1>
-  <p>Dashboards • Data Analytics • Finance Research • Photography • Blogs</p>
+  <div>
+    <h1>PublishIt</h1>
+    <h2>Knowledge Publishing Platform</h2>
+    <p>
+      A platform to publish dashboards, research, photography, articles, ideas, and learning resources.
+      Built to share knowledge through data, stories, visuals, and analysis.
+    </p>
+    <a href="#dashboard" class="btn">Explore Dashboard</a>
+    <a href="#contact" class="btn">Contact</a>
+  </div>
 </header>
 
 <nav>
   <a href="#about">About</a>
-  <a href="#dashboards">Dashboards</a>
+  <a href="#knowledge">Knowledge</a>
+  <a href="#dashboard">Dashboard</a>
   <a href="#research">Research</a>
   <a href="#photography">Photography</a>
   <a href="#blog">Blog</a>
@@ -91,38 +146,109 @@
 </nav>
 
 <section id="about">
-  <h2>About Me</h2>
+  <h2>About PublishIt</h2>
   <div class="card">
-    <p>Hello, I am <strong>Probhat Patnaik</strong>. PublishIT is my personal portfolio where I will showcase Power BI dashboards, finance research, data analytics projects, photography, and blogs.</p>
+    <p>
+      PublishIt is a digital knowledge platform created by <strong>Probhat Patnaik</strong>.
+      The purpose of this platform is to publish meaningful work across data analytics,
+      finance, Power BI, research, photography, and personal writing.
+    </p>
+    <p>
+      Instead of only showing final outputs, PublishIt will also explain the background,
+      purpose, dataset, methodology, insights, and learning behind each project.
+    </p>
   </div>
 </section>
 
-<section id="dashboards">
-  <h2>Power BI Dashboards</h2>
+<section id="knowledge">
+  <h2>Knowledge Areas</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>📊 Dashboards</h3>
+      <p>Interactive Power BI dashboards with business context and key insights.</p>
+    </div>
+    <div class="card">
+      <h3>📈 Finance Research</h3>
+      <p>Research notes on finance, ESG, credit analysis, stablecoins, and public finance.</p>
+    </div>
+    <div class="card">
+      <h3>🤖 Data & AI</h3>
+      <p>Analytics, AI learning, automation ideas, and data-driven problem solving.</p>
+    </div>
+    <div class="card">
+      <h3>📷 Photography</h3>
+      <p>Bird, moon, wildlife, and nature photography with stories and camera settings.</p>
+    </div>
+    <div class="card">
+      <h3>✍️ Blogs</h3>
+      <p>Articles, reflections, poems, LinkedIn-style thoughts, and learning notes.</p>
+    </div>
+    <div class="card">
+      <h3>📚 Resources</h3>
+      <p>Templates, guides, learning materials, and downloadable resources in future.</p>
+    </div>
+  </div>
+</section>
+
+<section id="dashboard">
+  <h2>Featured Power BI Dashboard</h2>
   <div class="card">
-    <p>This section will contain my interactive Power BI dashboards.</p>
-    <p><strong>Coming soon:</strong> Sales Dashboard, Finance Dashboard, Stablecoin Analysis Dashboard.</p>
+    <h3>RDP Power BI Day 03 Dashboard</h3>
+    <p>
+      This is my first embedded Power BI dashboard on PublishIt. In future, every dashboard
+      will include background, business problem, dataset explanation, key insights, and learning outcomes.
+    </p>
+
+    <span class="tag">Power BI</span>
+    <span class="tag">Dashboard</span>
+    <span class="tag">Data Visualization</span>
+
+    <iframe class="dashboard-frame" title="RDP_PBI_Day03"
+      src="https://app.powerbi.com/view?r=eyJrIjoiYmFjZWMxNTctNzIzYS00MmYxLThmMmEtNTNmNDcyMWMwYTc4IiwidCI6IjgxOGYwNmZhLTY0OWEtNDYxNS1iYzcxLTg2OTAzYjVjOTJjYyJ9"
+      allowfullscreen="true">
+    </iframe>
   </div>
 </section>
 
 <section id="research">
-  <h2>Finance & Research</h2>
-  <div class="card">
-    <p>Here I will publish research notes on finance, ESG, credit analysis, stablecoins, and data-driven business insights.</p>
+  <h2>Research & Insights</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Stablecoin Research</h3>
+      <p>Upcoming research on stablecoin reserves, backing assets, trust, custodians, and risk analysis.</p>
+    </div>
+    <div class="card">
+      <h3>Finance & ESG</h3>
+      <p>Notes and articles on financial analysis, ESG data, credit research, and market observations.</p>
+    </div>
   </div>
 </section>
 
 <section id="photography">
   <h2>Photography</h2>
   <div class="card">
-    <p>This section will showcase my bird, moon, wildlife, and nature photography.</p>
+    <p>
+      This section will showcase bird, moon, wildlife, and nature photography.
+      Each photo may include location, camera, lens, settings, and story behind the shot.
+    </p>
   </div>
 </section>
 
 <section id="blog">
-  <h2>Blog</h2>
-  <div class="card">
-    <p>Articles, reflections, poems, and thoughts on data, finance, AI, leadership, and life will appear here.</p>
+  <h2>Blogs & Articles</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Data & Career</h3>
+      <p>Thoughts on Power BI, AI, data analytics, and career readiness.</p>
+    </div>
+    <div class="card">
+      <h3>Finance & Economy</h3>
+      <p>Blogs on finance, economy, ESG, stablecoins, and public finance.</p>
+    </div>
+    <div class="card">
+      <h3>Poems & Reflections</h3>
+      <p>Hindi poems, personal reflections, and philosophical writing.</p>
+    </div>
   </div>
 </section>
 
@@ -130,13 +256,14 @@
   <h2>Contact</h2>
   <div class="card">
     <p>Email: <strong>probhat@publishit.in</strong></p>
-    <p>LinkedIn and GitHub links will be added soon.</p>
-    <a class="button" href="mailto:probhat@publishit.in">Contact Me</a>
+    <p>GitHub: <strong>PatnaikP</strong></p>
+    <a class="btn" href="mailto:probhat@publishit.in">Send Email</a>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 PublishIT. Built by Probhat Patnaik.</p>
+  <p>© 2026 PublishIt. Built by Probhat Patnaik.</p>
+  <p>Publish Knowledge. Inspire Ideas.</p>
 </footer>
 
 </body>
