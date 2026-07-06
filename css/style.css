@@ -251,3 +251,23 @@ footer h3 {
     grid-template-columns: 1fr;
   }
 }
+/* Dashboard Page */
+
+.dashboard-page{
+    max-width:1400px;
+    margin:auto;
+}
+
+.dashboard-frame{
+    width:100%;
+    height:80vh;
+    min-height:750px;
+    border:none;
+    border-radius:16px;
+    margin-top:25px;
+    background:#111;
+}
+
+.feature-card{
+    overflow:hidden;
+}
