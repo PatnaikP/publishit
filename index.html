@@ -3,114 +3,118 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PublishIT | Knowledge Publishing Platform</title>
+  <title>PublishIT | Curated Knowledge Publishing Platform</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-<header class="topbar">
-  <a href="index.html" class="brand">
-    <span class="brand-icon">◈</span>
-    <span>Publish<span>IT</span></span>
-  </a>
+<header class="navbar">
+  <a href="index.html" class="logo">Publish<span>IT</span></a>
 
   <nav>
-    <a href="index.html">Home</a>
     <a href="dashboards.html">Dashboards</a>
+    <a href="projects.html">Projects</a>
     <a href="research.html">Research</a>
     <a href="photography.html">Photography</a>
     <a href="blog.html">Blog</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="publishers.html">Publishers</a>
+    <a href="publish.html" class="nav-btn">Publish</a>
   </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-content">
-    <p class="eyebrow">Knowledge Publishing Platform</p>
-    <h1>Publish Knowledge.<br>Inspire Ideas.</h1>
-    <p class="hero-text">
-      PublishIT is a digital platform for dashboards, finance research, data analytics,
-      photography, blogs, and ideas.
+  <div class="hero-textbox">
+    <p class="eyebrow">CURATED KNOWLEDGE PUBLISHING PLATFORM</p>
+    <h1>Publish your work.<br>Discover ideas.<br>Build your identity.</h1>
+    <p>
+      PublishIT is a curated platform where professionals showcase dashboards, projects,
+      research, blogs, photography, and data-driven work with proper credits and publisher profiles.
     </p>
+
     <div class="hero-buttons">
-      <a href="dashboards.html" class="btn primary">Explore Dashboards</a>
-      <a href="blog.html" class="btn secondary">Read Blogs</a>
+      <a href="#explore" class="btn primary">Explore Work</a>
+      <a href="publish.html" class="btn secondary">Publish Your Work</a>
     </div>
+  </div>
+
+  <div class="featured-card">
+    <p class="eyebrow">FEATURED THIS WEEK</p>
+    <h3>Sales Analytics Dashboard</h3>
+    <p>By <strong>Probhat Patnaik</strong></p>
+    <div class="preview-box">
+      <span>Power BI Preview</span>
+    </div>
+    <div class="tags">
+      <span>Power BI</span>
+      <span>Dashboard</span>
+      <span>Retail</span>
+    </div>
+    <a href="dashboards.html">View Project →</a>
   </div>
 </section>
 
-<section class="stats">
-  <div>
-    <h2>1+</h2>
-    <p>Dashboards</p>
+<section id="explore" class="section">
+  <p class="eyebrow">EXPLORE</p>
+  <h2>Browse by category</h2>
+
+  <div class="category-grid">
+    <a href="dashboards.html" class="category-card">
+      <h3>Dashboards</h3>
+      <p>Power BI, Tableau, Excel dashboards and visual analytics.</p>
+    </a>
+
+    <a href="projects.html" class="category-card">
+      <h3>Projects</h3>
+      <p>Excel, Python, SQL, apps, automation and technical projects.</p>
+    </a>
+
+    <a href="research.html" class="category-card">
+      <h3>Research</h3>
+      <p>Finance, ESG, stablecoins, public finance and data research.</p>
+    </a>
+
+    <a href="photography.html" class="category-card">
+      <h3>Photography</h3>
+      <p>Birds, wildlife, moon, nature and visual storytelling.</p>
+    </a>
+
+    <a href="blog.html" class="category-card">
+      <h3>Blogs</h3>
+      <p>Ideas, tutorials, reflections, articles and learning notes.</p>
+    </a>
+
+    <a href="publishers.html" class="category-card">
+      <h3>Publishers</h3>
+      <p>Explore work by individual publishers and contributors.</p>
+    </a>
   </div>
-  <div>
-    <h2>0+</h2>
-    <p>Research Notes</p>
-  </div>
-  <div>
-    <h2>0+</h2>
-    <p>Photo Stories</p>
-  </div>
-  <div>
-    <h2>0+</h2>
-    <p>Blogs</p>
-  </div>
+</section>
+
+<section class="section dark">
+  <p class="eyebrow">RECENTLY PUBLISHED</p>
+  <h2>Latest work</h2>
+  <div class="project-grid" id="latest-projects"></div>
 </section>
 
 <section class="section">
-  <div class="section-title">
-    <p>Explore</p>
-    <h2>Knowledge Areas</h2>
-  </div>
-
-  <div class="grid">
-    <a href="dashboards.html" class="card">
-      <h3>📊 Dashboards</h3>
-      <p>Interactive Power BI dashboards with background, insights, and business context.</p>
-    </a>
-
-    <a href="research.html" class="card">
-      <h3>📈 Research</h3>
-      <p>Finance, ESG, credit analysis, stablecoins, and public finance research.</p>
-    </a>
-
-    <a href="photography.html" class="card">
-      <h3>📷 Photography</h3>
-      <p>Birds, moon, wildlife, nature photography, and visual stories.</p>
-    </a>
-
-    <a href="blog.html" class="card">
-      <h3>✍️ Blogs</h3>
-      <p>Articles, poems, reflections, AI thoughts, and learning notes.</p>
-    </a>
-  </div>
+  <p class="eyebrow">PUBLISHERS</p>
+  <h2>Featured publishers</h2>
+  <div class="publisher-grid" id="featured-publishers"></div>
 </section>
 
-<section class="section featured">
-  <div class="section-title">
-    <p>Featured</p>
-    <h2>Latest Power BI Dashboard</h2>
-  </div>
-
-  <div class="feature-card">
-    <div>
-      <h3>RDP Power BI Day 03 Dashboard</h3>
-      <p>
-        My first embedded Power BI dashboard on PublishIT. Future dashboards will include
-        background, dataset, methodology, insights, and learning outcomes.
-      </p>
-      <a href="dashboards.html" class="btn primary">View Dashboard</a>
-    </div>
-  </div>
+<section class="cta">
+  <h2>Want to publish your work?</h2>
+  <p>Submit dashboards, projects, research, blogs, or photography for editorial review.</p>
+  <a href="publish.html" class="btn primary">Publish Now</a>
 </section>
 
 <footer>
-  <h3>PublishIT</h3>
-  <p>Publish Knowledge. Inspire Ideas.</p>
+  <h3>Publish<span>IT</span></h3>
+  <p>Discover. Publish. Inspire.</p>
   <p>© 2026 PublishIT. Built by Probhat Patnaik.</p>
 </footer>
 
+<script src="js/script.js"></script>
 </body>
 </html>
