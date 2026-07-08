@@ -90,3 +90,17 @@ footer h3{font-size:34px;color:white;margin-bottom:10px}
   .hero-buttons{flex-direction:column}
   .section,.cta{padding:70px 30px}
 }
+.dashboard-page {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.dashboard-frame {
+  width: 100%;
+  height: 80vh;
+  min-height: 750px;
+  border: none;
+  border-radius: 18px;
+  margin-top: 30px;
+  background: #000;
+}
