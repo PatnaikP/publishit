@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "title": "Sales Demo Dashboard",
+    "category": "Dashboard",
+    "publisher": "Probhat Patnaik",
+    "publisherId": "probhat",
+    "technology": "Power BI",
+    "description": "Retail sales analytics dashboard built in Power BI.",
+    "thumbnail": "images/powerbi-demo.jpg",
+    "page": "dashboards.html",
+    "featured": true,
+    "tags": [
+      "Power BI",
+      "Sales",
+      "Retail"
+    ]
+  }
+]

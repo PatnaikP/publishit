@@ -1,0 +1,17 @@
+[
+  {
+    "id": "probhat",
+    "name": "Probhat Patnaik",
+    "designation": "Assistant Manager",
+    "company": "ICRA Analytics",
+    "skills": [
+      "Power BI",
+      "Finance",
+      "Research",
+      "Photography"
+    ],
+    "linkedin": "",
+    "photo": "",
+    "featured": true
+  }
+]
