@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PublishIT</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -23,14 +28,23 @@
   </nav>
 </header>
 
+<main>
+
 <section class="hero">
-  <div class="hero-textbox">
-    <p class="eyebrow">CURATED KNOWLEDGE PUBLISHING PLATFORM</p>
-    <h1>Publish your work.<br>Discover ideas.<br>Build your identity.</h1>
-    <p>
-      PublishIT is a curated platform where professionals showcase dashboards, projects,
-      research, blogs, photography, and data-driven work with proper credits and publisher profiles.
+  <div class="hero-left">
+    <p class="eyebrow">CURATED PORTFOLIO & KNOWLEDGE PLATFORM</p>
+
+    <h1>Show Your Work.<br>Share Your Knowledge.</h1>
+
+    <p class="hero-subtitle">
+      PublishIT helps professionals showcase dashboards, projects, research,
+      blogs, photography and data-driven work with proper credits and publisher profiles.
     </p>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search dashboards, projects, research, publishers..." />
+      <button>Search</button>
+    </div>
 
     <div class="hero-buttons">
       <a href="#explore" class="btn primary">Explore Work</a>
@@ -38,19 +52,56 @@
     </div>
   </div>
 
-  <div class="featured-card">
-    <p class="eyebrow">FEATURED THIS WEEK</p>
-    <h3>Sales Analytics Dashboard</h3>
-    <p>By <strong>Probhat Patnaik</strong></p>
-    <div class="preview-box">
-      <span>Power BI Preview</span>
+  <div class="hero-right">
+    <div class="featured-card">
+      <p class="eyebrow">FEATURED THIS WEEK</p>
+      <h3>Sales Analytics Dashboard</h3>
+      <p>By <strong>Probhat Patnaik</strong></p>
+
+      <div class="preview-box">
+        <img src="images/powerbi-preview.png" alt="Power BI Dashboard">
+      </div>
+
+      <div class="tags">
+        <span>Power BI</span>
+        <span>Dashboard</span>
+        <span>Retail</span>
+      </div>
+
+      <a href="dashboards.html">View Project →</a>
     </div>
-    <div class="tags">
-      <span>Power BI</span>
-      <span>Dashboard</span>
-      <span>Retail</span>
-    </div>
-    <a href="dashboards.html">View Project →</a>
+  </div>
+</section>
+
+<section class="trusted">
+  <p>Built for professionals working with</p>
+
+  <div class="trusted-items">
+    <span>Power BI</span>
+    <span>Excel</span>
+    <span>Python</span>
+    <span>SQL</span>
+    <span>Research</span>
+    <span>Photography</span>
+  </div>
+</section>
+
+<section class="stats-strip">
+  <div>
+    <h3>1+</h3>
+    <p>Published Work</p>
+  </div>
+  <div>
+    <h3>1</h3>
+    <p>Publisher</p>
+  </div>
+  <div>
+    <h3>5</h3>
+    <p>Categories</p>
+  </div>
+  <div>
+    <h3>100%</h3>
+    <p>Curated</p>
   </div>
 </section>
 
@@ -91,7 +142,7 @@
   </div>
 </section>
 
-<section class="section dark">
+<section class="section">
   <p class="eyebrow">RECENTLY PUBLISHED</p>
   <h2>Latest work</h2>
   <div class="project-grid" id="latest-projects"></div>
@@ -109,12 +160,15 @@
   <a href="publish.html" class="btn primary">Publish Now</a>
 </section>
 
+</main>
+
 <footer>
   <h3>Publish<span>IT</span></h3>
-  <p>Discover. Publish. Inspire.</p>
+  <p>Show Your Work. Share Your Knowledge.</p>
   <p>© 2026 PublishIT. Built by Probhat Patnaik.</p>
 </footer>
 
 <script src="js/script.js"></script>
+
 </body>
 </html>
